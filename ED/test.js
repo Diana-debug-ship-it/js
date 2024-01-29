@@ -17,10 +17,11 @@
 // console.log(( str.substring(6, 2) )); // "ring"
 
 
-let firstPos = 0;
-let lastPos = 1;
-let firstSymbol = "";
+
 function showVericalMessage(string) {
+  let firstPos = 0;
+  let lastPos = 1;
+  let firstSymbol = "";
   let str = string;
   while (lastPos < 8) {
       let symbol = str.slice(firstPos, lastPos);
