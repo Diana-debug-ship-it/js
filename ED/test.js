@@ -22,8 +22,8 @@ let lastPos = 1;
 let firstSymbol = "";
 function showVericalMessage(string) {
   let str = string;
-  while (endPos < 8) {
-      let symbol = str.slice(firstPos, endPos);
+  while (lastPos < 8) {
+      let symbol = str.slice(firstPos, lastPos);
       if (symbol == "s") {
         firstSymbol = str[0].toUpperCase();
         console.log(firstSymbol);
