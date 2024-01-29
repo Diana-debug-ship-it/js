@@ -17,13 +17,13 @@
 // console.log(( str.substring(6, 2) )); // "ring"
 
 
-let startPos = 0;
-let endPos = 1;
+let firstPos = 0;
+let lastPos = 1;
 let firstSymbol = "";
 function showVericalMessage(string) {
   let str = string;
   while (endPos < 8) {
-      let symbol = str.slice(startPos, endPos);
+      let symbol = str.slice(firstPos, endPos);
       if (symbol == "s") {
         firstSymbol = str[0].toUpperCase();
         console.log(firstSymbol);
@@ -31,8 +31,8 @@ function showVericalMessage(string) {
       else {
         console.log(symbol);
       };
-      startPos++;
-      endPos++;
+      firstPos++;
+      lastPos++;
     
   };
 };
