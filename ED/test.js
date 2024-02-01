@@ -38,4 +38,17 @@ function showVericalMessage(string) {
   };
 };
 showVericalMessage('strada');
+function showVerticalMessage(str) {
+  let i = 0;
+  if (str[i]==='s'){
+      console.log(str[i].toUpperCase());
+      i++;
+  }
+  let len = str.length>7 ? 7 : str.length;
+  for (i; i<len; i++) {
+      console.log(str[i]);
+  }
+}
+
+showVerticalMessage('strada');
 
